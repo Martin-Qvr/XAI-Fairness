@@ -17,8 +17,8 @@ Group 3:
 - Random Forest ?
 
 3. We analyze the performance of our own model : 
-- RMSE 
-- ROC / AUC etc..
+- Accuracy 
+- F1-score 
 
 4. Global interpretability we use the PDP and ALE method to interpret our own model and compare the different methods
 
