@@ -8,9 +8,7 @@ Group 3:
 - Nathan Aïm 
 - Charles Proye
 
-1. We first implement 2 surrogates methods of evalution on the the estimated default probability (PD) provided in the dataset :
-- Partial Dependence Plot (PDP)
-- Accumulated Local Effects (ALE)
+1. We first implement a global surrogate method using a Logistic Regression model
 
 2. Then we estimate your own black-box machine learning model:
 - XGBoost ? 
