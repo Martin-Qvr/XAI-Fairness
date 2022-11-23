@@ -8,7 +8,7 @@ Group 3:
 - Nathan Aïm 
 - Charles Proye
 
-1. We first implement a global surrogate method using a Logistic Regression model
+1. We first implement a global surrogate method using a Decision Tree Classifier
 
 2. Then we estimate your own black-box machine learning model:
 - XGBoost ? 
