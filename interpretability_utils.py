@@ -23,7 +23,7 @@ def plot_pdp(data : pd.DataFrame, model):
 def plot_ale(data : pd.DataFrame, model):
     """ 
     This function is used to plot the ALE (Accumulated Local Effect).
-    ccumulated Local Effects (ALE) plots describe how features influence 
+    Accumulated Local Effects (ALE) plots describe how features influence 
     the prediction of a ML model on average, while taking into account the 
     dependence between the features.
     """
@@ -54,7 +54,7 @@ def display_lime(data: pd.DataFrame, model, index_to_explain : int):
 
 def display_shap(data: pd.DataFrame, model, index_to_explain: int):
     """ 
-    This function is used to display Lime. 
+    This function is used to display shap. 
     The Shapley value of the feature xj is 
     the weighted average contribution of xj across all possible subsets S, 
     where S does not include xj.
