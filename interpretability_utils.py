@@ -6,7 +6,8 @@ from sklearn.inspection import PartialDependenceDisplay
 from PyALE import ale
 import lime
 import lime.lime_tabular
-
+import shap
+# print the JS visualization code to the notebook
 
 
 def plot_pdp(data : pd.DataFrame, model):
@@ -50,3 +51,18 @@ def display_lime(data: pd.DataFrame, model, index_to_explain : int):
     explainer = lime.lime_tabular.LimeTabularExplainer(data.astype(int).values, mode='classification',feature_names=data.columns)
     exp = explainer.explain_instance(data.loc[index_to_explain,feature_list].astype(int).values, model.predict_proba, num_features=len(feature_list))
     exp.show_in_notebook(show_table=True)
+
+def display_shap(data: pd.DataFrame, model, index_to_explain: int):
+    """ 
+    This function is used to display Lime. 
+    The Shapley value of the feature xj is 
+    the weighted average contribution of xj across all possible subsets S, 
+    where S does not include xj.
+    """
+    
+    explainer = shap.TreeExplainer(model)
+    choosen_instance = data.loc[[index_to_explain]]
+    shap_values = explainer.shap_values(choosen_instance)
+    shap.force_plot(explainer.expected_value[1], shap_values[1], choosen_instance)
+
+
