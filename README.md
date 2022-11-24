@@ -28,3 +28,9 @@ the following three fairness definitions: Statistical Parity, Conditional Statis
 
 
 7. Implement a FPDP using a fairness measure. Discuss your results.
+
+
+
+Other things to do for creativity: 
+- anchor
+- protodash
