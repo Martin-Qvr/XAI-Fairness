@@ -32,5 +32,8 @@ the following three fairness definitions: Statistical Parity, Conditional Statis
 
 
 Other things to do for creativity: 
+Global : 
+- PFI
+Local :
 - anchor
 - protodash
