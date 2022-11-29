@@ -63,7 +63,8 @@ def plot_roc_curve(model, test_features, test_labels):
 
     """
     Plot the ROC curve of the classifier.
-    """
 
+    """
+    
     model_roc = RocCurveDisplay.from_estimator(model, test_features, test_labels)
     plt.show()

@@ -72,7 +72,7 @@ def train_model(algo,
                                                   train_labels,
                                                   sampling_strategy)
     if best_params:
-        model = algo()
+        model = algo(**best_params)
     else:
         model = algo()
     
