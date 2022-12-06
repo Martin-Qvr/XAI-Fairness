@@ -1,18 +1,11 @@
 # algorithmic-fairness
-Private repo for the algorithmic fairness project
+Repo for the algorithmic fairness project
 
-Group 3:
-- Sarah Mayer
-- Martin Quievre
-- Camille Epitalon
-- Nathan Aïm 
-- Charles Proye
 
 1. We first implement a global surrogate method using a Decision Tree Classifier
 
 2. Then we estimate your own black-box machine learning model:
-- XGBoost ? 
-- Random Forest ?
+- Random Forest
 
 3. We analyze the performance of our own model : 
 - Accuracy 
@@ -30,8 +23,7 @@ the following three fairness definitions: Statistical Parity, Conditional Statis
 7. Implement a FPDP using a fairness measure. Discuss your results.
 
 
-
-Other things to do for creativity: 
+Other things we did for creativity: 
 Global : 
 - PFI
 Local :
